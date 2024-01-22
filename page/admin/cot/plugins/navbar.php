@@ -43,12 +43,10 @@ include '../../../process/login.php';
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
-
         .SPoint {
             opacity: 0.5;
             background-repeat: no-repeat;
         }
-
         .cardHead:hover {
             .SPoint {
                 filter: none;
