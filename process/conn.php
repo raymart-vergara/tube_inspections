@@ -1,0 +1,13 @@
+<?php
+date_default_timezone_set('Asia/Manila');
+$servername = 'localhost';
+ $username = 'root'; 
+ $password = '';
+// $servername = 'localhost'; $username = 'server_113.4'; $password = 'SystemGroup@2022';
+try {
+    $conn = new PDO ("mysql:host=$servername;dbname=tube_ins_db",$username,$password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    echo 'NO CONNECTION'.$e->getMessage();
+}
+?>  
