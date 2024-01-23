@@ -1,7 +1,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
   <a href="dashboard.php" class="brand-link">
-    <img src="../../dist/img/sam-error-logo.png" alt="Logo" class="brand-image img-circle elevation-3"
+    <img src="../../../dist/img/sam-error-logo.png" alt="Logo" class="brand-image img-circle elevation-3"
       style="opacity: .8">
     <span class="brand-text font-weight-light">&ensp;SAM &ensp;|&ensp; ERROR</span>
   </a>
@@ -11,7 +11,7 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="../../dist/img/user.png" class="img-circle elevation-2" alt="User Image">
+        <img src="../../../dist/img/user.png" class="img-circle elevation-2" alt="User Image">
       </div>
       <div class="info">
         <a href="home.php" class="d-block">
@@ -26,7 +26,7 @@
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
         <li class="nav-item">
-          <a href="dashboard.php" class="nav-link">
+          <a href="home.php" class="nav-link">
             <i class="nav-icon fas fa-chart-bar"></i>
             <p>
               Home
@@ -34,7 +34,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="machine_list.php" class="nav-link active bg-info">
+          <a href="start_point.php" class="nav-link active bg-info">
             <i class="nav-icon fas fa-laptop"></i>
             <p>
               Start Point
@@ -42,7 +42,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="error_list.php" class="nav-link">
+          <a href="mass_production.php" class="nav-link">
             <i class="nav-icon fas fa-bug"></i>
             <p>
               Mass Production
@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="sam_charts.php" class="nav-link">
+          <a href="end_point.php" class="nav-link">
           <i class="nav-icon fas fa-chart-bar"></i>
             <p>
              End Point

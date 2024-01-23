@@ -18,8 +18,6 @@ include '../../../process/login.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Admin</title>
 
-    <link rel="stylesheet" href="css/admin-page.css">
-
     <link rel="icon" href="../../../dist/img/tir-logo.png" type="image/x-icon" />
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="../../../dist/css/font.min.css">
@@ -33,9 +31,10 @@ include '../../../process/login.php';
     <link rel="stylesheet" href="../../../plugins/sweetalert2/dist/sweetalert2.min.css">
 
     <style>
-        .CenterMain{
+        .CenterMain {
             position: relative;
         }
+
         .CenterDiv {
             margin: 0;
             position: absolute;
@@ -43,17 +42,27 @@ include '../../../process/login.php';
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
         }
+
         .SPoint {
             opacity: 0.5;
             background-repeat: no-repeat;
+            background-size: cover;
         }
+
         .cardHead:hover {
             .SPoint {
-                filter: none;
+                transition: transform 1s;
                 opacity: 1.0;
             }
+
+            .img-circle {
+                transform: scale(1.3);
+            }
+
+            transition: transform 0.2s;
             transform: translateY(-0.5rem) scale(1.0125);
             box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+
         }
 
         .loader {
@@ -108,7 +117,7 @@ include '../../../process/login.php';
     <div class="wrapper">
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center bg-dark">
-            <img class="animation__shake" src="../../dist/img/sam-error-logo.png" alt="logo" height="300" width="300">
+            <img class="animation__shake" src="../../../dist/img/tir-logo.png" alt="logo" height="300" width="300">
         </div>
         <!-- Navbar -->
         <nav class="main-header navbar navbar-expand bg-teal  border-0 ">

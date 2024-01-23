@@ -7,7 +7,7 @@
 </footer>
 <?php
 //MODALS
-// include '../../modals/logout_modal.php';
+include '../../../modals/logout_modal.php';
 // include '../../modals/new_account.php';
 // include '../../modals/update_account.php';
 // include '../../modals/target_data_modal.php';
@@ -25,7 +25,7 @@
 <!-- jQuery UI 1.11.4 -->
 <script src="../../../plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- SweetAlert2 -->
-<script type="text/javascript" src="..././../plugins/sweetalert2/dist/sweetalert2.min.js"></script>
+<script type="text/javascript" src="../../../plugins/sweetalert2/dist/sweetalert2.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button)
