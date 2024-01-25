@@ -27,7 +27,7 @@
              with font-awesome or any other icon font library -->
         <li class="nav-item">
           <a href="home.php" class="nav-link">
-            <i class="nav-icon fas fa-chart-bar"></i>
+            <i class="nav-icon fa fa-home"></i>
             <p>
               Home
             </p>
@@ -35,7 +35,7 @@
         </li>
         <li class="nav-item">
           <a href="start_point.php" class="nav-link">
-            <i class="nav-icon fas fa-laptop"></i>
+            <i class="nav-icon  fa fa-play-circle"></i>
             <p>
               Start Point
             </p>
@@ -43,7 +43,7 @@
         </li>
         <li class="nav-item">
           <a href="mass_production.php" class="nav-link">
-            <i class="nav-icon fas fa-bug"></i>
+            <i class="nav-icon fas fa-chart-bar"></i>
             <p>
               Mass Production
             </p>
@@ -51,7 +51,7 @@
         </li>
         <li class="nav-item">
           <a href="end_point.php" class="nav-link ">
-          <i class="nav-icon fas fa-chart-bar"></i>
+          <i class="nav-icon fa fa-stop-circle"></i>
             <p>
              End Point
             </p>

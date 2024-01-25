@@ -27,7 +27,7 @@
              with font-awesome or any other icon font library -->
         <li class="nav-item">
           <a href="home.php" class="nav-link active bg-info">
-            <i class="nav-icon fa fa-home""></i>
+            <i class="nav-icon fa fa-home"></i>
             <p>
               Home
             </p>
