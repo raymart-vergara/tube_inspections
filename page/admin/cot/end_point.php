@@ -89,15 +89,6 @@
                 </select>
             </div>
             <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-4 col-form-label">Slit Condition</label>
-                <select id="part_name" class="form-control form-control-sm col-sm-8">
-                    <option selected>Choose...</option>
-                    <option>OK</option>
-                    <option>NG</option>
-                    <option>N/A</option>
-                </select>
-            </div>
-            <div class="form-group row p-0 m-0">
                 <label for="" class="col-sm-4 col-form-label">Color</label>
                 <select id="part_name" class="form-control form-control-sm col-sm-8">
                     <option selected>Choose...</option>
@@ -129,7 +120,7 @@
 
                 </div>
                 <div class="col-sm-5">
-                    <h4 class="font-weight-bold my-3">| Inside Diameter</h4>
+                    <h4 class="font-weight-bold my-3">| Outside Diameter</h4>
                     <div class="form-group row p-0 m-0">
                         <label for="" class="col-sm-4 col-form-label text-start">Tolerance</label>
                         <input type="text" class="form-control form-control-sm col-sm-8" id="ce_od_tolerance">

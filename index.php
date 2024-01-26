@@ -37,12 +37,12 @@ require 'process/login.php';
         <div class="login-box">
             <div class="login-logo pt-3">
                 <img src="dist/img/tir-logo.png" style="height:120px;">
-            <h1 class="text-center text-bold">TUBE <br /> INSPECTIONS</h1>
+                <h1 class="text-center text-bold">TUBE <br /> INSPECTIONS</h1>
             </div>
         </div>
         <div class="card-body login-card-body">
             <form action="" method="POST" id="login_form">
-                <div class="input-group mb-3">
+                <div class="input-group mb-1">
                     <input type="text" class="form-control" id="username" name="username" placeholder="Username"
                         autocomplete="off">
                     <div class="input-group-append">
@@ -51,12 +51,24 @@ require 'process/login.php';
                         </div>
                     </div>
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-1">
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password"
                         autocomplete="off">
                     <div class="input-group-append">
                         <div class="input-group-text">
                             <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <select class="form-control">
+                        <option value="cot">COT Tube Inspection</option>
+                        <option value="pvc">PVC Tube Inspection</option>
+                        <span class="fas fa-lock"></span>
+                    </select>
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-sync-alt"></span>
                         </div>
                     </div>
                 </div>
