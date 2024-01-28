@@ -23,11 +23,11 @@
                     </label>
                     <div class="input-group col-sm-8 m-0 p-0">
                         <div class="input-group-prepend">
-                            <button class="btn btn-sm  bg-teal" id="ce_tend_btn"
+                            <button class="btn btn-sm  bg-teal" id="ce_tstart_btn"onclick="ce_tstart_btn()"
                                 type="button">&nbsp;Start&nbsp;</button>
                         </div>
-                        <input type="text" class="form-control" id="ce_tstart" placeholder="" aria-label=""
-                            aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="ce_tstart_input" placeholder="" aria-label=""
+                            aria-describedby="basic-addon1" disabled>
                     </div>
                 </div>
                 <div class="form-group row m-0 mt-1">
@@ -35,11 +35,11 @@
                     </label>
                     <div class="input-group col-sm-8 m-0 p-0">
                         <div class="input-group-prepend">
-                            <button class="btn btn-danger btn-sm" id="ce_tend_btn" type="button">&nbsp; End
+                            <button class="btn btn-danger btn-sm" id="ce_tend_btn" type="button" disabled onclick="ce_tend_btn()">&nbsp; End
                                 &nbsp;</button>
                         </div>
-                        <input type="text" class="form-control" id="ce_tend" placeholder="" aria-label=""
-                            aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="ce_tend_input" placeholder="" aria-label=""
+                            aria-describedby="basic-addon1" disabled>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,8 @@
             <div class="col-5 p-0 m-0">
                 <div class="form-group row p-0 m-0">
                     <label for="inputEmail3" class="col-sm-4 col-form-label text-start">Inspected By</label>
-                    <input type="text" class="form-control form-control-sm col-sm-8"  value=" <?= htmlspecialchars($_SESSION['name']); ?>" disabled id="ce_inspby">
+                    <input type="text" class="form-control form-control-sm col-sm-8"
+                        value=" <?= htmlspecialchars($_SESSION['name']); ?>" disabled id="ce_inspby">
                 </div>
                 <div class="form-group row p-0 m-0">
                     <label for="partName" class="col-sm-4 col-form-label text-start">Shift</label>
@@ -60,11 +61,12 @@
                 </div>
                 <div class="form-group row p-0 m-0">
                     <label for="" class="col-sm-4 col-form-label text-start"">Inspection Date</label>
-                    <input type=" date" class="form-control form-control-sm col-sm-8"  value=" <?= htmlspecialchars($_SESSION['name']); ?>" disabled id="ce_ins_date">
+                    <input type=" date" class="form-control form-control-sm col-sm-8"
+                        value=" <?= htmlspecialchars($_SESSION['name']); ?>" disabled id="ce_ins_date">
                 </div>
                 <div class="form-group row p-0 m-0">
                     <label for="inputEmail3" class="col-sm-4 col-form-label text-start">Total Mins</label>
-                    <input type="text" class="form-control form-control-sm col-sm-8" id="total_ce_mins">
+                    <input type="text" class="form-control form-control-sm col-sm-8" id="total_ce_mins" disabled>
                 </div>
             </div>
         </div>
@@ -136,7 +138,38 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <script>
+            let startDate, endDate;
+
+            function ce_tstart_btn() {
+                startDate = new Date();
+                document.getElementById('ce_tstart_input').value = formatDate(startDate);
+                document.getElementById('ce_tstart_btn').disabled =true;
+                document.getElementById('ce_tend_btn').disabled = false;
+            }
+
+            function ce_tend_btn() {
+                endDate = new Date();
+                document.getElementById('ce_tend_input').value = formatDate(endDate);
+                document.getElementById('ce_tend_btn').disabled = true;
+              
+
+                const timeDiff = endDate - startDate;
+                const totalMinutes = timeDiff / (1000 * 60);
+                document.getElementById('total_ce_mins').value = totalMinutes.toFixed(2);
+            }
+
+            function formatDate(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                const hours = String(date.getHours()).padStart(2, '0');
+                const minutes = String(date.getMinutes()).padStart(2, '0');
+                const seconds = String(date.getSeconds()).padStart(2, '0');
+                return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+            }
+        </script>
+
         <!-- ================================================================================================================================ -->
         <div class="col-12">
 

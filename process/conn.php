@@ -4,6 +4,7 @@ $username = 'root';
 $password = '';
 date_default_timezone_set('Asia/Manila');
 $server_date_time = date('Y-m-d H:i:s');
+$server_date_time1 = date('Y-m-d H:i:s');
 $server_date_only = date('Y-m-d');
 //+1 day $day = date('Y-m-d',(strtotime('+1 day',strtotime($server_date_only))));
 $server_date_month = date('M');

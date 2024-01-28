@@ -19,12 +19,12 @@ if ($method == 'fetch_cot_data') {
 
 // fetch_data.php
 
-if ($method == 'fetch_cot_data2') {
-    $optionId = $_POST['optionId'];
 
-    $query = "SELECT field1, field2 FROM your_table WHERE id = :id";
+if ($method == 'fetch_cot_tolerance') {
+
+    $query = "SELECT `i_dia_tol_add`,`i_dia_tol_add`,`i_dia_tol_add`,`i_dia_tol_add`,`i_dia_tol_add`,`i_dia_tol_add` FROM m_cot WHERE id = :id";
     $stmt = $pdo->prepare($query);
-    $stmt->bindParam(':id', $optionId, PDO::PARAM_INT);
+    $stmt->bindParam(':id', PDO::PARAM_INT);
     $stmt->execute();
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 

@@ -1,7 +1,7 @@
 <?php include 'plugins/navbar.php'; ?>
 <?php include 'plugins/sidebar/start_point_bar.php'; ?>
 
-<section class="container-md">
+<section class="container-lg">
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper bg-white">
         <h4 class="font-weight-bold my-3">| START POINT</h4>
@@ -23,11 +23,11 @@
                     </label>
                     <div class="input-group col-sm-8 m-0 p-0">
                         <div class="input-group-prepend">
-                            <button class="btn btn-sm  bg-teal" id="cs_tend_btn"
+                            <button class="btn btn-sm  bg-teal" id="cs_tstart_btn" onclick="cs_tstart_btn()"
                                 type="button">&nbsp;Start&nbsp;</button>
                         </div>
-                        <input type="text" class="form-control" id="cs_tstart" placeholder="" aria-label=""
-                            aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="cs_tstart_input" placeholder="" aria-label=""
+                            aria-describedby="basic-addon1" disabled>
                     </div>
                 </div>
                 <div class="form-group row m-0 mt-1">
@@ -35,11 +35,12 @@
                     </label>
                     <div class="input-group col-sm-8 m-0 p-0">
                         <div class="input-group-prepend">
-                            <button class="btn btn-danger btn-sm" id="cs_tend_btn" type="button">&nbsp; End
+                            <button class="btn btn-danger btn-sm" id="cs_tend_btn" onclick="cs_tend_btn()" disabled
+                                type="button">&nbsp; End
                                 &nbsp;</button>
                         </div>
-                        <input type="text" class="form-control" id="cs_tend" placeholder="" aria-label=""
-                            aria-describedby="basic-addon1">
+                        <input type="text" class="form-control" id="cs_tend_input" placeholder="" aria-label=""
+                            aria-describedby="basic-addon1" disabled>
                     </div>
                 </div>
             </div>
@@ -66,7 +67,7 @@
                 </div>
                 <div class="form-group row p-0 m-0">
                     <label for="inputEmail3" class="col-sm-4 col-form-label text-start">Total Mins</label>
-                    <input type="text" class="form-control form-control-sm col-sm-8" id="total_cs_mins">
+                    <input type="text" class="form-control form-control-sm col-sm-8" id="total_cs_mins" disabled>
                 </div>
             </div>
         </div>
@@ -116,7 +117,10 @@
                     <h4 class="font-weight-bold my-3">| Inside Diameter</h4>
                     <div class="form-group row p-0 m-0">
                         <label for="" class="col-sm-4 col-form-label text-start">Tolerance</label>
-                        <input type="text" class="form-control form-control-sm col-sm-8" id="cs_id_tolerance">
+                        <span class="col-1 text-center px-1"> + </span><input type="text"
+                            class="form-control form-control-sm col-sm-3" id="cs_id_tol_add" disabled>
+                        <span class="col-1 text-center px-1"> - </span><input type="text"
+                            class="form-control form-control-sm col-sm-3" id="cs_id_tol_min" disabled>
                     </div>
                     <div class="form-group row p-0 m-0">
                         <label for="" class="col-sm-4 col-form-label text-start">Start</label>
@@ -134,7 +138,10 @@
                     <h4 class="font-weight-bold my-3">| Outside Diameter</h4>
                     <div class="form-group row p-0 m-0">
                         <label for="" class="col-sm-4 col-form-label text-start">Tolerance</label>
-                        <input type="text" class="form-control form-control-sm col-sm-8" id="cs_od_tolerance">
+                        <span class="col-1 text-center px-1"> + </span><input type="text"
+                            class="form-control form-control-sm col-sm-3" id="cs_od_tol_add" disabled>
+                        <span class="col-1 text-center px-1"> - </span><input type="text"
+                            class="form-control form-control-sm col-sm-3" id="cs_od_tol_min" disabled>
                     </div>
                     <div class="form-group row p-0 m-0">
                         <label for="" class="col-sm-4 col-form-label text-start">Start</label>
@@ -155,8 +162,11 @@
         <div class="col-12">
             <h4 class="font-weight-bold my-3">| Wall Thickness</h4>
             <div class="form-group row p-0 m-0">
-                <label for="partName" class="col-sm-4 col-form-label p-0 m-0">Tolerance</label>
-                <input type="number" class="form-control form-control-sm col-sm-4 p-0 m-0" id="cs_wt_tolerance">
+                <label for="partName" class="col-sm-3 col-form-label p-0 m-0">Tolerance</label>
+                <span class="col-1 text-center"> + </span><input type="text"
+                    class="form-control form-control-sm col-sm-2" id="cs_wt_tol_add" disabled>
+                <span class="col-1 text-center"> - </span><input type="text"
+                    class="form-control form-control-sm col-sm-2" id="cs_wt_tol_min" disabled>
             </div>
         </div>
 
