@@ -76,33 +76,33 @@
         <h4 class="font-weight-bold my-3">| Appearance Inspection</h4>
         <div class="col-12">
             <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-4 col-form-label">Outside Appearance</label>
-                <select id="cs_outside_app" class="form-control form-control-sm col-sm-8">
+                <label for="" class="col-sm-3 col-form-label">Outside Appearance</label>
+                <select id="cs_outside_app" class="form-control form-control-sm col-sm-2">
+                    <option selected>Choose...</option>
+                    <option>OK</option>
+                    <option>NG</option>
+                </select>
+                <div class="col-sm-2">
+                </div>
+                <label for="" class="col-sm-3 col-form-label">Inside Appearance</label>
+                <select id="cs_inside_app" class="form-control form-control-sm col-sm-2">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
                 </select>
             </div>
             <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-4 col-form-label">Inside Appearance</label>
-                <select id="cs_inside_app" class="form-control form-control-sm col-sm-8">
-                    <option selected>Choose...</option>
-                    <option>OK</option>
-                    <option>NG</option>
-                </select>
-            </div>
-            <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-4 col-form-label">Slit Condition</label>
-                <select id="cs_color_app" class="form-control form-control-sm col-sm-8">
+                <label for="" class="col-sm-3 col-form-label">Slit Condition</label>
+                <select id="cs_color_app" class="form-control form-control-sm col-sm-2">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
                     <option>N/A</option>
                 </select>
-            </div>
-            <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-4 col-form-label">Color</label>
-                <select id="part_name" class="form-control form-control-sm col-sm-8">
+                <div class="col-sm-2">
+                </div>
+                <label for="" class="col-sm-3 col-form-label">Color</label>
+                <select id="part_name" class="form-control form-control-sm col-sm-2">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
@@ -271,20 +271,24 @@
 
             <h4 class="font-weight-bold my-3">| Tube Breaking</h4>
             <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-6 col-form-label">Using Round Bar</label>
-                <select class="form-control form-control-sm col-sm-6" id="cs_tb_round">
+                <label for="" class="col-sm-3 col-form-label">Using Round Bar</label>
+                <select class="form-control form-control-sm col-sm-2" id="cs_tb_round">
+                    <option selected>Choose...</option>
+                    <option>OK</option>
+                    <option>NG</option>
+                </select>
+                <div class="col-sm-2">
+                    
+                </div>
+                <label for="" class="col-sm-3 col-form-label">Using Bare Hands</label>
+                <select class="form-control form-control-sm col-sm-2" id="cs_tb_bare">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
                 </select>
             </div>
             <div class="form-group row p-0 m-0">
-                <label for="" class="col-sm-6 col-form-label">Using Bare Hands</label>
-                <select class="form-control form-control-sm col-sm-6" id="cs_tb_bare">
-                    <option selected>Choose...</option>
-                    <option>OK</option>
-                    <option>NG</option>
-                </select>
+               
             </div>
             <br>
             <div class="row">
