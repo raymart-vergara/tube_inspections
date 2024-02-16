@@ -61,7 +61,7 @@ require 'process/login.php';
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <select class="form-control">
+                    <select class="form-control" id="type" name="type">
                         <option value="cot">COT Tube Inspection</option>
                         <option value="pvc">PVC Tube Inspection</option>
                         <span class="fas fa-lock"></span>
