@@ -93,7 +93,7 @@
             </div>
             <div class="form-group row p-0 m-0">
                 <label for="" class="col-sm-3 col-form-label">Slit Condition</label>
-                <select id="cs_color_app" class="form-control form-control-sm col-sm-2">
+                <select id="cs_slit_con" class="form-control form-control-sm col-sm-2">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
@@ -102,7 +102,7 @@
                 <div class="col-sm-2">
                 </div>
                 <label for="" class="col-sm-3 col-form-label">Color</label>
-                <select id="part_name" class="form-control form-control-sm col-sm-2">
+                <select id="cs_color_app" class="form-control form-control-sm col-sm-2">
                     <option selected>Choose...</option>
                     <option>OK</option>
                     <option>NG</option>
@@ -278,7 +278,7 @@
                     <option>NG</option>
                 </select>
                 <div class="col-sm-2">
-                    
+
                 </div>
                 <label for="" class="col-sm-3 col-form-label">Using Bare Hands</label>
                 <select class="form-control form-control-sm col-sm-2" id="cs_tb_bare">
@@ -288,7 +288,7 @@
                 </select>
             </div>
             <div class="form-group row p-0 m-0">
-               
+
             </div>
             <br>
             <div class="row">
@@ -325,7 +325,7 @@
                 </div>
             </div>
         </div>
-        <button class="btn bg-teal btn-lg btn-block my-4" id="cs_save">SAVE</button>
+        <button class="btn bg-teal btn-lg btn-block my-4" id="cs_save" onclick='cot_start_point()'>SAVE</button>
     </div>
 </section>
 
