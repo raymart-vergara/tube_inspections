@@ -55,7 +55,7 @@
                 <div class="form-group row p-0 m-0">
                     <label for="partName" class="col-sm-4 col-form-label text-start">Shift</label>
                     <select id="cs_shift" class="form-control form-control-sm col-sm-8">
-                        <option selected>Select Shift</option>
+                        <option selected value=''>Select Shift</option>
                         <option>Day Shift</option>
                         <option>Night Shift</option>
                     </select>
